@@ -1,0 +1,17 @@
+<resources>
+<!--TextViews -->
+     <dimen name="size_title">20sp</dimen>
+     <dimen name="size_description_quote">12sp</dimen>
+    <dimen name="size_author_quote">12sp</dimen>
+     <dimen name="padding_title">20dp</dimen>
+<!-- Images -->
+<dimen name="size_image_height">100dp</dimen>
+<dimen name="size_image_width">@dimen/size_image_height</dimen>
+    <!--ShapeQuote -->
+    <dimen name="size_shape_quotes_height">115dp</dimen>
+    <dimen name="size_shape_quotes_width">240dp</dimen>
+
+    <dimen name="size_shape_quotes_height_land">105dp</dimen>
+    <dimen name="size_shape_quotes_width_land">320dp</dimen>
+
+</resources>

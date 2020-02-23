@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" android:keepScreenOn="true">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_marginLeft="15dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/cancel_alarm"
+       android:textColor="#00000f"
+       android:text="Cancel"
+       android:background="@drawable/custom_buttom"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-46dp"
+        android:textColor="#00000f"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_alarm"
+        android:text="Save"
+        android:background="@drawable/custom_buttom"></Button>
+
+
+
+    <TimePicker
+        android:layout_gravity="center"
+        android:id="@+id/alarm_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numbersBackgroundColor="#ffffff"
+        android:headerBackground="#009688"
+        android:numbersSelectorColor="@color/colorPrimary"
+        android:timePickerMode="clock">
+
+    </TimePicker>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center">
+
+       <TextView
+           android:id="@+id/monday"
+           android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Mon"
+           android:gravity="center"
+           android:textColor="#00000f"
+           android:background="@drawable/week"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            android:gravity="center"
+            android:textColor="#00000f"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/monday"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:gravity="center"
+            android:textColor="#00000f"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/tuesday"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#00000f"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/wednesday"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/friday"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:textColor="#00000f"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/thursday"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/saturday"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:textColor="#00000f"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/friday"></TextView>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/sunday"
+            android:textColor="#00000f"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/week"
+            android:layout_toRightOf="@id/saturday"></TextView>
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/title_alarm"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textColor="#00000f"
+        android:text="Enter Title :"></TextView>
+
+    <EditText
+        android:id="@+id/alarm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="66dp"
+        android:layout_toRightOf="@id/title_alarm"
+        android:textColor="#00000f"
+        android:width="150dp"></EditText>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+        <TextView
+            android:id="@+id/ringtone_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="19dp"
+            android:clickable="true"
+            android:textColor="#00000f"
+            android:text="Choose Ringtone :">
+        </TextView>
+        <EditText
+            android:id="@+id/ringtone_title"
+             android:editable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="#00000f"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/ringtone_alarm"
+            android:clickable="true"
+            android:width="150dp"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/stop_alarm"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textColor="#00000f"
+            android:text="Stop Alarm :"></TextView>
+
+        <Spinner
+            android:id="@+id/alarm_stop"
+            android:spinnerMode="dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@id/stop_alarm"
+            android:entries="@array/stop_alarm"
+            android:prompt="@string/stop_alarm_prompt"
+            android:textColor="#00000f"
+            android:width="150dp"></Spinner>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

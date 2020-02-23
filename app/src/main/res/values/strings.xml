@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Awake&amp;Go</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="alarm_notification">AwakeGo</string>
+    <string name="stop_alarm_prompt">Choose a way</string>
+    <string-array name="stop_alarm">
+        <item>Ordinary</item>
+        <item>Quiz Math</item>
+        <item>Shuffled words</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

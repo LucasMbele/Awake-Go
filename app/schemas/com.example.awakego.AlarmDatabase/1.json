@@ -1,0 +1,76 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1c1ee21d2cb12021b699c095622a1372",
+    "entities": [
+      {
+        "tableName": "alarm",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`alarm_date` TEXT, `alarm_time` TEXT, `alarm_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `alarm_name` TEXT, `alarm_hour` INTEGER NOT NULL, `alarm_minute` INTEGER NOT NULL, `alarm_day` INTEGER NOT NULL, `alarm_song` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "alarm_date",
+            "columnName": "alarm_date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "alarm_time",
+            "columnName": "alarm_time",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "alarm_id",
+            "columnName": "alarm_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alarm_name",
+            "columnName": "alarm_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "alarm_hour",
+            "columnName": "alarm_hour",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alarm_minute",
+            "columnName": "alarm_minute",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "day",
+            "columnName": "alarm_day",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alarm_song",
+            "columnName": "alarm_song",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "alarm_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1c1ee21d2cb12021b699c095622a1372')"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "440722348650",
+    "firebase_url": "https://awakego-50616.firebaseio.com",
+    "project_id": "awakego-50616",
+    "storage_bucket": "awakego-50616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440722348650:android:aed71bdf9c8d35a1630813",
+        "android_client_info": {
+          "package_name": "com.example.awakego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440722348650-m70e1q54mm0935a77vathnh1gughhcq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.awakego",
+            "certificate_hash": "473ae1f3763d6bacf3b99aa4451e265481fddb3f"
+          }
+        },
+        {
+          "client_id": "440722348650-e7is1tnsb76jdp04emquv0n0entermud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdaSiEadMcfPDhslehbbJTJpSKLfPNQQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440722348650-e7is1tnsb76jdp04emquv0n0entermud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
